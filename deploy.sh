@@ -64,14 +64,14 @@ trap cleanup EXIT
 clear
 echo ""
 echo -e "${CYAN}==============================================${NC}"
-echo -e "${GREEN}        CXLVIN MULTIPLEX DEPLOYER v1.2${NC}"
+echo -e "${GREEN}        CXLVIN MULTIPLEX DEPLOYER v1.3${NC}"
 echo -e "${CYAN}==============================================${NC}"
 
 # =========================
 # HISTORY DISPLAY
 # =========================
 echo ""
-echo -e "${YELLOW} YOUR DEPLOYED SERVER HOSTS${NC}"
+echo -e "${YELLOW} 🌩️ YOUR DEPLOYED SERVER HOSTS 🌩️${NC}"
 echo -e "${CYAN}--------------------------------------------------------${NC}"
 if [ -s "$HISTORY_FILE" ]; then
     CURRENT_TIME=$(date +%s)
@@ -84,7 +84,7 @@ if [ -s "$HISTORY_FILE" ]; then
         ((COUNT++))
     done
 else
-    echo -e "${WHITE}No previous deployments yet${NC}"
+    echo -e "${WHITE}No previous deployments yet ¯⁠\⁠_⁠(⁠ツ⁠)⁠_⁠/⁠¯${NC}"
 fi
 echo ""
 
@@ -105,7 +105,7 @@ fi
 # =========================================
 echo ""
 echo -e "${CYAN}=========================================${NC}"
-echo -e "${GREEN}        SELECT REGION${NC}"
+echo -e "${GREEN}        SELECT REGION 🌏${NC}"
 echo -e "${CYAN}=========================================${NC}"
 echo ""
 echo -e "${YELLOW}NOTE:${NC} Please select only regions available in 
@@ -175,7 +175,7 @@ done
 if [ "$BUILD_MODE" = "AUTO" ]; then
 echo ""
 echo -e "${CYAN}=========================================${NC}"
-echo -e "${GREEN}        AUTO BUILD PRESETS${NC}"
+echo -e "${GREEN}        AUTO BUILD PRESETS 🤖${NC}"
 echo -e "${CYAN}=========================================${NC}"
 echo ""
 echo "1) 🚀 HIGH PERFORMANCE"
@@ -261,7 +261,7 @@ fi
 if [ "$BUILD_MODE" = "MANUAL" ]; then
 echo ""
 echo -e "${CYAN}=========================================${NC}"
-echo -e "${GREEN}      MANUAL RESOURCE SETTINGS${NC}"
+echo -e "${GREEN}      MANUAL RESOURCE SETTINGS 🧩${NC}"
 echo -e "${CYAN}=========================================${NC}"
 echo ""
 echo -e "${YELLOW}Fixed Defaults:${NC}"
@@ -801,7 +801,7 @@ EOF
 
 echo ""
 echo -e "${CYAN}=========================================${NC}"
-echo -e "${GREEN}          BUILDING IMAGE${NC}"
+echo -e "${GREEN}          BUILDING IMAGE 👾${NC}"
 echo -e "${CYAN}=========================================${NC}"
 echo ""
 
