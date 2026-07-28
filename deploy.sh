@@ -377,12 +377,13 @@ cat > config.json <<'EOF'
 {
   "log": {"loglevel": "warning"},
   "dns": {
-    "servers": ["https://dns.adguard-dns.com/dns-query", "1.1.1.1", "223.5.5.5", "8.8.8.8"],
+    "servers": ["1.1.1.1", "223.5.5.5", "8.8.8.8"],
     "queryStrategy": "UseIP",
     "disableCache": false,
     "disableFallback": false,
     "hosts": {
       "doubleclick.net": "127.0.0.1",
+      "dns.adguard-dns.com": "127.0.0.1",
       "googlesyndication.com": "127.0.0.1",
       "googleadservices.com": "127.0.0.1"
     }
