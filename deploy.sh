@@ -71,7 +71,7 @@ echo -e "${CYAN}==============================================${NC}"
 # HISTORY DISPLAY
 # =========================
 echo ""
-echo -e "${YELLOW} 🌩️ YOUR DEPLOYED SERVER HOSTS 🌩️${NC}"
+echo -e "${YELLOW}       YOUR DEPLOYED SERVER HOSTS 🌩️${NC}"
 echo -e "${CYAN}--------------------------------------------------------${NC}"
 if [ -s "$HISTORY_FILE" ]; then
     CURRENT_TIME=$(date +%s)
