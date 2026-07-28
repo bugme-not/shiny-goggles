@@ -395,7 +395,7 @@ cat > config.json <<'EOF'
         "network": "ws", "wsSettings": {"path": "/CxlvinTRWS"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 10002, "listen": "::", "protocol": "vless", "tag": "vless-ws",
@@ -404,7 +404,7 @@ cat > config.json <<'EOF'
         "network": "ws", "wsSettings": {"path": "/CxlvinVlWS"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 10003, "listen": "::", "protocol": "shadowsocks", "tag": "shadowsocks-ws",
@@ -413,7 +413,7 @@ cat > config.json <<'EOF'
         "network": "ws", "wsSettings": {"path": "/CxlvinSSWS"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 10004, "listen": "::", "protocol": "vmess", "tag": "vmess-ws",
@@ -422,7 +422,7 @@ cat > config.json <<'EOF'
         "network": "ws", "wsSettings": {"path": "/CxlvinVMWS"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 11001, "listen": "::", "protocol": "trojan", "tag": "trojan-hu",
@@ -440,7 +440,7 @@ cat > config.json <<'EOF'
         "network": "httpupgrade", "httpupgradeSettings": {"path": "/CxlvinVlHU"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 11003, "listen": "::", "protocol": "shadowsocks", "tag": "shadowsocks-hu",
@@ -449,7 +449,7 @@ cat > config.json <<'EOF'
         "network": "httpupgrade", "httpupgradeSettings": {"path": "/CxlvinSSHU"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 11004, "listen": "::", "protocol": "vmess", "tag": "vmess-hu",
@@ -458,7 +458,7 @@ cat > config.json <<'EOF'
         "network": "httpupgrade", "httpupgradeSettings": {"path": "/CxlvinVMHU"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 10010, "listen": "::", "protocol": "trojan", "tag": "trojan-xh",
@@ -467,7 +467,7 @@ cat > config.json <<'EOF'
         "network": "xhttp", "xhttpSettings": {"path": "/CxlvinTRXH", "mode": "auto"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 10009, "listen": "::", "protocol": "vless", "tag": "vless-xh",
@@ -476,7 +476,7 @@ cat > config.json <<'EOF'
         "network": "xhttp", "xhttpSettings": {"path": "/CxlvinVlXH", "mode": "auto"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 10012, "listen": "::", "protocol": "shadowsocks", "tag": "shadowsocks-xh",
@@ -485,7 +485,7 @@ cat > config.json <<'EOF'
         "network": "xhttp", "xhttpSettings": {"path": "/CxlvinSSXH", "mode": "auto"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     },
     {
       "port": 10011, "listen": "::", "protocol": "vmess", "tag": "vmess-xh",
@@ -494,7 +494,7 @@ cat > config.json <<'EOF'
         "network": "xhttp", "xhttpSettings": {"path": "/CxlvinVMXH", "mode": "auto"},
         "sockopt": {"tcpFastOpen": true, "tcpNoDelay": true, "tcpKeepAliveInterval": 15, "tcpKeepAliveIdle": 30, "tcpKeepAliveCount": 3, "tcpQuickAck": true, "tcpcongestion": "bbr"}
       },
-      "sniffing": {"enabled": true, "destOverride": ["http", "tls"]}
+      "sniffing": {"enabled": true, "destOverride": ["http", "tls", "fakedns"]}
     }
   ],
   "outbounds": [
